@@ -1,9 +1,9 @@
 About r-pvclust
 ===============
 
-Home: http://www.sigmath.es.osaka-u.ac.jp/shimo-lab/prog/pvclust/
+Home: http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/
 
-Package license: GPL (>= 2)
+Package license: GPL-2
 
 Feedstock license: BSD 3-Clause
 
@@ -116,11 +116,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bgruening](https://github.com/bgruening/)
 * [@conda-forge/r](https://github.com/conda-forge/r/)
-* [@daler](https://github.com/daler/)
-* [@dpryan79](https://github.com/dpryan79/)
-* [@jdblischak](https://github.com/jdblischak/)
-* [@johanneskoester](https://github.com/johanneskoester/)
 * [@sebastian-luna-valero](https://github.com/sebastian-luna-valero/)
 

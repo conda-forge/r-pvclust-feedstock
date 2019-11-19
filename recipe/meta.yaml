@@ -1,4 +1,4 @@
-{% set version = '2.0-0' %}
+{% set version = "2.2-0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,20 +12,19 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/pvclust_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/pvclust/pvclust_{{ version }}.tar.gz
-  sha256: 1a4615214992307fd7c786cf4607a3ae2af5c0d4067f5053e1c195798a70d741
+  sha256: 7892853bacd413b5a921006429641ad308a344ca171b3081c15e4c522a8b0201
 
 build:
   noarch: generic
-  number: 1002
+  number: 0
 
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
-  build:
+  host:
     - r-base
-
   run:
     - r-base
 
@@ -35,21 +34,16 @@ test:
     - "\"%R%\" -e \"library('pvclust')\""  # [win]
 
 about:
-  home: http://www.sigmath.es.osaka-u.ac.jp/shimo-lab/prog/pvclust/
-  license: GPL (>= 2)
+  home: http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/
+  license: GPL-2
   summary: An implementation of multiscale bootstrap resampling for assessing the uncertainty
     in hierarchical cluster analysis. It provides AU (approximately unbiased) p-value
     as well as BP (bootstrap probability) value for each cluster in a dendrogram.
   license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'   # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'   # [win]
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - dpryan79
     - sebastian-luna-valero
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
