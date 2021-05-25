@@ -35,7 +35,7 @@ test:
 
 about:
   home: http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: An implementation of multiscale bootstrap resampling for assessing the uncertainty
     in hierarchical cluster analysis. It provides AU (approximately unbiased) p-value
     as well as BP (bootstrap probability) value for each cluster in a dendrogram.
