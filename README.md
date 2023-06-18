@@ -1,11 +1,11 @@
-About r-pvclust
-===============
+About r-pvclust-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pvclust-feedstock/blob/main/LICENSE.txt)
 
 Home: http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pvclust-feedstock/blob/main/LICENSE.txt)
 
 Summary: An implementation of multiscale bootstrap resampling for assessing the uncertainty in hierarchical cluster analysis. It provides AU (approximately unbiased) p-value as well as BP (bootstrap probability) value for each cluster in a dendrogram.
 
